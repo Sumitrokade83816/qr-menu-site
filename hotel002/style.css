@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #8b0000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Hero */
+.hero img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Menu Images */
+.menu-images img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-images img:hover {
+    transform: scale(1.03);
+}
+
+/* Popular dishes */
+.popular {
+    text-align: center;
+}
+
+.dish img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* ===== ANIMATIONS ===== */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.slide-in {
+    transform: translateX(-40px);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+.slide-up {
+    transform: translateY(40px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+.zoom-in {
+    transform: scale(0.9);
+    opacity: 0;
+    animation: zoomIn 0.8s forwards;
+}
+
+/* Delays */
+header { animation-delay: 0.2s; }
+.hero { animation-delay: 0.4s; }
+.menu { animation-delay: 0.6s; }
+.popular { animation-delay: 0.8s; }
+.about { animation-delay: 1s; }
+.contact { animation-delay: 1.2s; }
+footer { animation-delay: 1.4s; }
+
+/* Keyframes */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
